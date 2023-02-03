@@ -8,6 +8,8 @@ import Header from './components/Header';
 import Calendar1 from './components/Calendar1/Calendar1';
 import DatePiker from './components/Calendar2';
 import { Calender3 } from './components/Calendar3';
+import { Calender3a } from './components/Calendar3a';
+
 
 
 function App() {
@@ -44,14 +46,20 @@ function App() {
         } />
         <Route path='/2' element={
           <>
-          <Header />
-          <DatePiker/>
+            <Header />
+            <DatePiker />
           </>
         } />
         <Route path='/3' element={
           <>
-          <Header />
-          <Calender3 startingDate={new Date} />
+            <Header />
+            <Calender3 startingDate={new Date()} />
+          </>
+        } />
+        <Route path='/4' element={
+          <>
+            <Header />
+            <Calender3a />
           </>
         } />
 
